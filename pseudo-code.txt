@@ -1,0 +1,45 @@
+Summary: Make a game that runs in the console. The computer will play against the user.
+Computer will randomly pick a choice between Rock, Paper and Scissors. Will ask user for a
+choice that isn't case sensitive. Rock beats scissors which beats paper which beats rock.
+
+function getCompChoice:
+    List = ['rock', 'paper', 'scissors']
+    random.int(0, 2)
+    return list[random.int]
+
+function getPlayerChoice:
+    input = "What is your choice? (rock, paper, or scissors)
+    input.tolowercase
+    return input
+
+function playRound(playerChoice, compChoice):
+    let playerwon = false
+    if (playerchoice == "rock"):
+        if (compChoice == "scissors"):
+            console.log("Player has won!")
+            playerwon = true
+        else if (compChoice == "rock"):
+            console.log("It is a tie!")
+        else if (compChoice == "paper"):
+            console.log("Computer has won!")
+    else if (playerchoice == "paper"):
+        if (compChoice == "scissors"):
+            console.log("Computer has won!")
+        else if (compChoice == "rock"):
+            console.log("Player has won!")
+        else if (compChoice == "paper"):
+            console.log("It is a tie!")
+    else
+        if (compChoice == "scissors"):
+            console.log("It is a tie!")
+        else if (compChoice == "rock"):
+            console.log("Computer has won!")
+        else if (compChoice == "paper"):
+            console.log("Player has won!")
+
+function game():
+    prompt how many games you want to play?
+    for x in range gamecount:
+        choice = prompt(What your choice?)
+        compChoice = randcomp()
+        game(choice, compchoice)
