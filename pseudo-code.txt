@@ -2,17 +2,17 @@ Summary: Make a game that runs in the console. The computer will play against th
 Computer will randomly pick a choice between Rock, Paper and Scissors. Will ask user for a
 choice that isn't case sensitive. Rock beats scissors which beats paper which beats rock.
 
-function getCompChoice:
+#function getCompChoice:
     List = ['rock', 'paper', 'scissors']
     random.int(0, 2)
     return list[random.int]
 
-function getPlayerChoice:
+#function getPlayerChoice:
     input = "What is your choice? (rock, paper, or scissors)
     input.tolowercase
     return input
 
-function playRound(playerChoice, compChoice):
+#function playRound(playerChoice, compChoice):
     let playerwon = false
     if (playerchoice == "rock"):
         if (compChoice == "scissors"):
